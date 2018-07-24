@@ -31,7 +31,7 @@ Once downloaded, you need to run `npm install` and then `npm start` in your cons
 
 ## Live Version
 
-You can find a live version of the project [here](https://ivanteso.github.io/my-neighborhood-map/). Enjoy!
+You can find a live version of the project [here](https://ivanteso.github.io/grilli-finder-neighborhood-map/). Enjoy!
 
 ## Requirements
 
