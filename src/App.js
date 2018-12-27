@@ -154,14 +154,14 @@ class App extends Component {
       // if results are >1, calculate the new bounds
       Object.values(this.state.foundGrills).map((marker) => {
         let lat   = parseFloat(marker.location.lat);
-        let long  = parseFloat(marker.location.lng);
-        let point = new window.google.maps.LatLng(lat, long);
+        let lng  = parseFloat(marker.location.lng);
+        let point = new window.google.maps.LatLng(lat, lng);
         objectsBounds.extend(point);
         return objectsBounds
       });
       // Calculate the new center and set the zoom
-      cenLat = (objectsBounds.f.b + objectsBounds.f.f) / 2
-      cenLng = (objectsBounds.b.b + objectsBounds.b.f) / 2
+      cenLat = (objectsBounds.l.j + objectsBounds.l.l) / 2
+      cenLng = (objectsBounds.j.j + objectsBounds.j.l) / 2
       center = { lat: cenLat, lng: cenLng}
       zoom = 12
     }
